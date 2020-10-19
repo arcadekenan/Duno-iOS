@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A1EDA07F253E02A1007D434C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDA07E253E02A1007D434C /* AppDelegate.swift */; };
-		A1EDA081253E02A1007D434C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDA080253E02A1007D434C /* SceneDelegate.swift */; };
-		A1EDA083253E02A1007D434C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDA082253E02A1007D434C /* ViewController.swift */; };
-		A1EDA086253E02A1007D434C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EDA084253E02A1007D434C /* Main.storyboard */; };
+		A1EDA083253E02A1007D434C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDA082253E02A1007D434C /* MainViewController.swift */; };
 		A1EDA088253E02A4007D434C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EDA087253E02A4007D434C /* Assets.xcassets */; };
 		A1EDA08B253E02A4007D434C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EDA089253E02A4007D434C /* LaunchScreen.storyboard */; };
+		A1EDA09C253E05D3007D434C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDA09B253E05D3007D434C /* MainViewModel.swift */; };
+		A1EDA0A2253E0B7A007D434C /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDA0A1253E0B7A007D434C /* MenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1EDA07B253E02A1007D434C /* Duno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EDA07E253E02A1007D434C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1EDA080253E02A1007D434C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1EDA082253E02A1007D434C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A1EDA085253E02A1007D434C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1EDA082253E02A1007D434C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A1EDA087253E02A4007D434C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1EDA08A253E02A4007D434C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1EDA08C253E02A4007D434C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1EDA09B253E05D3007D434C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A1EDA0A1253E0B7A007D434C /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,55 @@
 		A1EDA07D253E02A1007D434C /* Duno */ = {
 			isa = PBXGroup;
 			children = (
-				A1EDA07E253E02A1007D434C /* AppDelegate.swift */,
-				A1EDA080253E02A1007D434C /* SceneDelegate.swift */,
-				A1EDA082253E02A1007D434C /* ViewController.swift */,
-				A1EDA084253E02A1007D434C /* Main.storyboard */,
 				A1EDA087253E02A4007D434C /* Assets.xcassets */,
+				A1EDA09A253E05B2007D434C /* Model */,
+				A1EDA099253E05A9007D434C /* ViewModel */,
+				A1EDA098253E059E007D434C /* View */,
+				A1EDA07E253E02A1007D434C /* AppDelegate.swift */,
 				A1EDA089253E02A4007D434C /* LaunchScreen.storyboard */,
 				A1EDA08C253E02A4007D434C /* Info.plist */,
 			);
 			path = Duno;
+			sourceTree = "<group>";
+		};
+		A1EDA098253E059E007D434C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1EDA09F253E0835007D434C /* Component */,
+				A1EDA09E253E082C007D434C /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1EDA099253E05A9007D434C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1EDA09B253E05D3007D434C /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1EDA09A253E05B2007D434C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1EDA09E253E082C007D434C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1EDA082253E02A1007D434C /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A1EDA09F253E0835007D434C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				A1EDA0A1253E0B7A007D434C /* MenuButton.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +166,6 @@
 			files = (
 				A1EDA08B253E02A4007D434C /* LaunchScreen.storyboard in Resources */,
 				A1EDA088253E02A4007D434C /* Assets.xcassets in Resources */,
-				A1EDA086253E02A1007D434C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +176,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1EDA083253E02A1007D434C /* ViewController.swift in Sources */,
+				A1EDA0A2253E0B7A007D434C /* MenuButton.swift in Sources */,
+				A1EDA083253E02A1007D434C /* MainViewController.swift in Sources */,
 				A1EDA07F253E02A1007D434C /* AppDelegate.swift in Sources */,
-				A1EDA081253E02A1007D434C /* SceneDelegate.swift in Sources */,
+				A1EDA09C253E05D3007D434C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A1EDA084253E02A1007D434C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1EDA085253E02A1007D434C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A1EDA089253E02A4007D434C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

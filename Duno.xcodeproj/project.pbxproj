@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A17D606A254275510015DB40 /* MenuForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D6069254275510015DB40 /* MenuForm.swift */; };
+		A17D606D2547466B0015DB40 /* MenuTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D606C2547466B0015DB40 /* MenuTextField.swift */; };
 		A1EDA07F253E02A1007D434C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDA07E253E02A1007D434C /* AppDelegate.swift */; };
 		A1EDA083253E02A1007D434C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDA082253E02A1007D434C /* MainViewController.swift */; };
 		A1EDA088253E02A4007D434C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EDA087253E02A4007D434C /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A17D6069254275510015DB40 /* MenuForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuForm.swift; sourceTree = "<group>"; };
+		A17D606C2547466B0015DB40 /* MenuTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTextField.swift; sourceTree = "<group>"; };
 		A1EDA07B253E02A1007D434C /* Duno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EDA07E253E02A1007D434C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EDA082253E02A1007D434C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				A1EDA0A1253E0B7A007D434C /* MenuButton.swift */,
+				A17D6069254275510015DB40 /* MenuForm.swift */,
+				A17D606C2547466B0015DB40 /* MenuTextField.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -177,8 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EDA0A2253E0B7A007D434C /* MenuButton.swift in Sources */,
+				A17D606A254275510015DB40 /* MenuForm.swift in Sources */,
 				A1EDA083253E02A1007D434C /* MainViewController.swift in Sources */,
 				A1EDA07F253E02A1007D434C /* AppDelegate.swift in Sources */,
+				A17D606D2547466B0015DB40 /* MenuTextField.swift in Sources */,
 				A1EDA09C253E05D3007D434C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

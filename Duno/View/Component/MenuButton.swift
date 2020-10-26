@@ -37,6 +37,7 @@ class MenuButton: UIView {
     }
     
     func containerViewConstraints() {
+        containerView.isUserInteractionEnabled = true
         containerView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             containerView.topAnchor.constraint(equalTo: self.topAnchor),
@@ -51,8 +52,8 @@ class MenuButton: UIView {
         NSLayoutConstraint.activate([
             textLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             textLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            textLabel.widthAnchor.constraint(equalTo: self.widthAnchor, constant: 80),
-            textLabel.heightAnchor.constraint(equalTo: self.heightAnchor, constant: 40),
+            textLabel.widthAnchor.constraint(equalTo: containerView.widthAnchor),
+            textLabel.heightAnchor.constraint(equalTo: containerView.heightAnchor),
         ])
     }
     

@@ -9,6 +9,7 @@ import Foundation
 
 protocol MainViewModelDelegate: class {
     func hostGame(userName: String, numberOfPlayers: Int)
+    func joinGame(userName: String, sessionCode: String)
 }
 
 class MainViewModel: MainViewModelDelegate {
@@ -17,7 +18,12 @@ class MainViewModel: MainViewModelDelegate {
     weak var delegate: MainViewControllerProtocol?
     
     public func hostGame(userName: String, numberOfPlayers: Int) {
-        print("we are on")
+        print("VM hostGame \(userName) -- \(numberOfPlayers)")
         delegate?.successHostGame()
+    }
+    
+    public func joinGame(userName: String, sessionCode: String) {
+        print("VM joinGame \(userName) -- \(sessionCode)")
+        delegate?.successJoinGame()
     }
 }
